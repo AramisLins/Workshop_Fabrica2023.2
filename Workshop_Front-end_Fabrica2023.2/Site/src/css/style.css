@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tulpen One', cursive;
+    scroll-behavior: smooth;
+}
+
+.home {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home .conteudo {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.conteudo .textoConteudo {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home .carroselHome {
+    width: 700px;
+    height: 80%;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px #555555;
+    border-radius: 10px;
+}
+
+.carroselHome .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cartas {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cartas .headerCartas {
+    width: 100%;
+    height: 10%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartas .cardCartas {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardCartas .card {
+    width: 23%;
+    height: 90%;
+    border: 5px solid #474969;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .cardBackground {
+    background-color: #B5A780;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBackground .nomeYU {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 0px #5a5a5a,
+        -2px -2px 2px #ffffff;
+    font-size: 18px;
+}
+
+.cardBackground .nivelYU {
+    width: 90%;
+    height: 5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.cardBackground .imgYU {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgYU img {
+    width: 100%;
+}
+
+.cardBackground .DescYU {
+    width: 90%;
+    background-color: #eddcc3;
+    height: 27%;
+    border-radius: 5px;
+}
+
+.DescYU .textoDesc {
+    width: 100%;
+    height: 85%;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+.DescYU .AtkDef {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.contato {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato .textoContato {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.contato .formContato {
+    width: 50%;
+    height: 100%;
+    background-color: #474969;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formContato .formulario {
+    width: 80%;
+    height: 70%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.formulario .nomesContato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nomesContato input {
+    width: 45%;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.formulario .emailContato {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.emailContato input {
+    width: 100%;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.formulario .textContato {
+    width: 100%;
+    height: 30vh;
+}
+
+.textContato textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    border-radius: 5px;
+    resize: none;
+}
+
+.formulario button {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.4s;
+    padding: 0.4rem 1.8rem;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+    background-color: rgb(0, 145, 2);
+}
+
+#contatos {
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+
+.conteudoFooter {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudoFooter .logoFooter {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoFooter img {
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.conteudoFooter .redesSociais {
+    width: 35%;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.redesSociais .redesFooter {
+    width: 50%;
+}
+
+.redesFooter ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.redesFooter ul li {
+    transition: 0.4s;
+}
+
+.redesFooter ul li:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}

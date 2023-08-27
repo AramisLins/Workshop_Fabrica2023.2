@@ -1,0 +1,56 @@
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #555555;
+}
+.header .logoHeader{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoHeader img{
+    width: 60%;
+}
+
+.header .navHeader{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navHeader nav{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navHeader nav ul{
+    width: 100%;
+    list-style: none;
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navHeader ul li{
+    transition: 0.4s;
+}
+.navHeader ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.navHeader ul li:hover{
+    transform: scale(1.3);
+}
+.navHeader ul li a:hover{
+    color: #ff0000;
+}
